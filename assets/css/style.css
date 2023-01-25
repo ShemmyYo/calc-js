@@ -1,17 +1,18 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    font-weight: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00AAFF, #00FF6C)
+    background: linear-gradient(to right, #0004ff77, rgba(10, 247, 10, 0.541), #ff00b37a)
 }
 
 .calculator-grid {
     display: grid;
+    gap: 0.25em;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
@@ -23,6 +24,7 @@ body {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
+    border-radius: 4px;
     outline: none;
     background-color: rgba(255,255,255, 0.4);
 }
@@ -38,6 +40,8 @@ body {
 .output {
     grid-column: 1/-1;
     background-color: rgba(0,0,0, 0.75);
+    border: 1px solid white;
+    border-radius: 4px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;

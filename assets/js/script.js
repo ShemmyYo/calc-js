@@ -35,7 +35,7 @@ class Calculator {
             this.compute()
         }
         this.operation = operation
-        this.previousOperand = this.currentOperand + operation
+        this.previousOperand = this.currentOperand
         this.currentOperand = ""
     }
 

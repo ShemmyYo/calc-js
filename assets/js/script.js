@@ -11,4 +11,39 @@ class Calcultor {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
     }
+
+    clear() {
+        this.curretntOperand = ""
+        this.previousOperand = ""
+        this.operation = undefined
+    }
+
+    delete() {
+
+    }
+
+    appendNumber() {
+
+    }
+
+    choseOperation() {
+
+    }
+
+    compute() {
+
+    }
+
+    updateDisplay() {
+
+    }
 }
+
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+numberButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
+})
